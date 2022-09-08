@@ -11,7 +11,7 @@ $query = $z->query("SELECT * FROM usertb WHERE username='$username' AND password
 if($query->rowCount()>0){
     $_SESSION['username']=$_POST['username'];
     $_SESSION['password']=$_POST['password'];
-    header("location:berandasz.php");
+    header("location:crud.php");
 } else{
     header("location:fosession.php");
 }
